@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script src="jsencrypt.min.js"></script>
+<script type="text/javascript">
+    var encrypt = new JSEncrypt();
+    encrypt.setPublicKey('MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCb+/UoaGcgE/WFvDhEaxypc+d6Q6npcojtYpYFexIQYHB9OaWHkKe2fR8l6JOeiQYla5G14UoSvafjhr14bEMeQ0W6TJqFS9cEMKHijMlq1hQEXmZbqzq2E6TJGPR5a+LxNOb0Lb7nc5uR8twd2k3rf3N8NxjYN3DF8um8L6TGswIDAQAB');
+    var encrypted = encrypt.encrypt('加密的字符串');
+    console.log(encrypted)
+</script>
+<body>
+
+</body>
+</html>
